@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b3354896b1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Cinzel:wght@500&family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#mywork">Mywork</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>User Interface Design</p>
+                <h1>Hey, I'm <span class="auto-type"></span>  <br>From Bankura</h1>
+            </div>
+        </div>
+    </div>
+   <!--------- About section is start from here-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey,This is<span> Durjodhan Mondal</span>.Currently pursuing Master in Computer Application[MCA] from <span>Maulana Abul Kalam Azad University of Technology</span> .I am very interested in learning about new technologies and applying them into different sectors.My major skills are programming languages likes <span>C,Java,and Data Structures.</span>I have also knoledge about <span>html ,css and Javascript.</span>
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Interest')">Interest</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java,C,C++</li>
+                            <li><span>Web Development</span><br>Html,Css,Javascript</li>
+                            <li><span>Database Management </span><br>MySQL</li>
+                            <li><span>Data Structures and Algorithms</span><br>Data Structures and Algorithms with Java</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Secondary</span><br>Completed 10th board from Lodna Mankhamar Vivekananda Vidyamandir(West Bengal Board of Secondary Education) with 65% marks(2016)</li>
+                            <li><span>Higher Secondary</span><br>Completed Higher Secondary Education from Onda High Scohool(West Bengal Board of Higher  Secondary Education) with 84% marks(2018)</li>
+                            <li><span>Graduation </span><br>Completed BCA from Institute of computer and Information Sciences,Bankura University(2018-2021)</li>
+                            <li><span>Post-Graduation</span><br> Currently studying in M.C.A from MAKAUT University(Ongoing),West Bengal </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Interest">
+                        <ul>
+                            <li><span>Point of Interest</span><br>Java Developer</li>
+                            <li><span>Photography</span><br>Mobile Photography</li>
+                            <li><span>Additional </span><br>Listening to Music,Entertainment during Travel, Setting the mood and Creating Memories during travel</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------- Services section is start from here-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Java Course</h2>
+                    <p>Java is a powerful general-purpose programming language. It is used to develop desktop and mobile applications, big data processing, embedded systems, and so on. According to Oracle, the company that owns Java, Java runs on 3 billion devices worldwide, which makes Java one of the most popular programming languages</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>C Course</h2>
+                    <p>C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in 1972.It is a very popular language, despite being old.C is strongly associated with UNIX, as it was developed to write the UNIX operating system.     
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!----------- Portfolio section is start from here-------------->
+    <div id="mywork">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img-1.png">
+                    <div class="layer">
+                        <h3>Food Ordering system</h3>
+                        <p>The main motive of an online food ordering system is to provide a convenient and efficient platform for customers to order food from various restaurants or food establishments through the internet</p>
+                        <a href="https://debojyoti1309.github.io/Rannaghor/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img-2.png">
+                    <div class="layer">
+                        <h3>Facebook Clone</h3>
+                        <p>Creating a Facebook clone's frontend involves designing and building the user interface and user experience of the application to mimic the look and feel of Facebook</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img-4.png">
+                    <div class="layer">
+                        <h3>Dictionary Web app</h3>
+                        <p>English dictionary web app f is optimized with your mobile device in mind to help you learn English or improve your English vocabulary.</p>
+                        <a href="https://dictionary-by-durjo.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------- Contact section is start from here-------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i>durjodhan87@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>6294129106</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/durjo.mondal.79"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/durjo_mondal?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href="https://wa.me/qr/6QHAP2OY2K53J1"><i class="fa-brands fa-whatsapp"></i></i></i></a>
+                        <a href="https://www.linkedin.com/in/durjodhan-mondal-5761a9234"><i class="fa-brands fa-linkedin-in"></i></i></a>
+                    </div>
+                    <a href="mycv22 (1).pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Durjo<i class="fa-solid fa-heart"></i>#portfolio</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+
+    <form name="submit-to-google-sheet">
+        <!-- <input name="email" type="email" placeholder="Email" required>
+        <button type="submit">Send</button> -->
+      </form>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzVeOB0nZ_ie8x1Q0ilqDQnVzfyqYo0vMiTxrHXMwErWWNUrZx-d_h_dLxPrtJpF62M/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg =document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message submitted Sucessfully"
+                setTimeout(function(){
+                    msg.innerHTML =""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Durjodhan", "Coder", "Java Developer"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+      </script>
+   
+</body>
+</html>
